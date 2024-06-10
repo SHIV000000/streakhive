@@ -1,43 +1,27 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Navbar from "./components/Navbar";
 import HabitList from "./components/HabitList";
-import HabitCard from "./components/HabitCard"; // Import HabitCard component
+import {
+  CirclePicker,
+  GithubPicker,
+  SketchPicker,
+  TwitterPicker,
+} from "react-color";
 import "daisyui";
+import { HabitsContext } from "./context/HabitsContext";
+import ColorPicker from "./components/ColorPicker";
 
 const App = () => {
-  const [habits, setHabits] = useState([
-    {
-      title: "Exercise",
-      data: Array(371).fill(0),
-      colorOptions: ["rgba(235, 64, 52, 0.1)", "rgba(235, 64, 52, 1)"],
-      tooltipContent: Array(371).fill("Some tooltip content"), // Update tooltipContent array
-    },
-    {
-      title: "Money Spent",
-      data: Array(371).fill(0),
-      colorOptions: ["rgba(44, 189, 89, 0.1)", "rgba(44, 189, 89, 1)"],
-      tooltipContent: Array(371).fill("Some tooltip content"), // Update tooltipContent array
-    },
-    {
-      title: "Alcohol Consumption",
-      data: Array(371).fill(0),
-      colorOptions: ["rgba(243, 193, 18, 0.1)", "rgba(243, 193, 18, 1)"],
-      tooltipContent: Array(371).fill("Some tooltip content"), // Update tooltipContent array
-    },
-  ]);
+  const { habits, setHabits, createHabit } = useContext(HabitsContext);
 
   const [newHabitTitle, setNewHabitTitle] = useState("");
 
-  const addHabit = () => {
-    const newHabit = {
-      title: newHabitTitle,
-      data: Array(371).fill(0),
-      colorOptions: ["rgba(255, 255, 255, 0.1)", "rgba(255, 255, 255, 1)"],
-      tooltipContent: Array(371).fill("Some tooltip content"), // Update tooltipContent array
-    };
-    setHabits([...habits, newHabit]);
-    setNewHabitTitle("");
-  };
+  const [color, setColor] = useState({
+    r: "241",
+    g: "112",
+    b: "19",
+    a: "1",
+  });
 
   return (
     <div className="App">
@@ -51,10 +35,20 @@ const App = () => {
             placeholder="New habit title"
             className="input input-bordered mr-2 mb-2 sm:mb-0 w-full sm:w-auto"
           />
-          <button className="btn btn-primary" onClick={addHabit}>
+          <button
+            className="btn btn-primary mr-2"
+            onClick={() => {
+              if (newHabitTitle && color) {
+                createHabit(newHabitTitle, color);
+                setNewHabitTitle("");
+              }
+            }}
+          >
             Add Habit
           </button>
+          <ColorPicker setColor={setColor} color={color} />
         </div>
+
         {/* Render HabitList with habits */}
         <HabitList habits={habits} />
       </div>
