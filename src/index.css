@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --primary-color-light: #1b1b19e0;
+
+  --bg-color-dark: #000000;
+  --text-color-dark: #ffffff;
+  --primary-color-dark: #1a1c1a;
+}
+
+[data-theme="light"] {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+  --primary-color: var(--primary-color-light);
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --primary-color: var(--primary-color-dark);
+}
+
+body {
+  @apply bg-[var(--bg-color)] text-[var(--text-color)];
+}
+
+.btn-primary {
+  @apply bg-[var(--primary-color)] text-[var(--text-color)];
+}
