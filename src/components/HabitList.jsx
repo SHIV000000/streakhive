@@ -7,11 +7,10 @@ const HabitList = ({ habits }) => {
       {habits.map((habit, index) => (
         <HabitCard
           key={index}
+          index={index}
           title={habit.title}
           data={habit.data}
-          colorOptions={habit.colorOptions} // Pass colorOptions to HabitCard
-          tooltipContent={habit.tooltipContent} // Pass tooltipContent to HabitCard
-          // Pass any other required props to HabitCard as needed
+          color={habit.color}
         />
       ))}
     </div>

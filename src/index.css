@@ -28,6 +28,18 @@ body {
   @apply bg-[var(--bg-color)] text-[var(--text-color)];
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 .btn-primary {
   @apply bg-[var(--primary-color)] text-[var(--text-color)];
+}
+
+svg text {
+  color: var(--text-color);
 }
