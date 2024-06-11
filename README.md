@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# StreakHive
+StreakHive is a habit tracking application that helps you visualize and manage your habits using compact calendar heatmaps. Each habit tracker is color-coded to provide an easy-to-understand overview of your progress.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+Compact Calendar Heatmaps: Visualize your habit progress with small, rectangular calendar heatmaps.
+Color-coded Habits: Each habit is color-coded with different color intensities to indicate progress.
+Add and Manage Habits: Easily add new habits and manage existing ones with intuitive controls.
+Tooltip Information: Hover over calendar cells to see additional information about your habit progress.
+Installation
 
-## Available Scripts
+## To get started with StreakHive, follow these steps:
 
-In the project directory, you can run:
+### Clone the repository:
+```bash
+git clone https://github.com/yourusername/streakhive.git
+```
+```bash
+cd streakhive
+```
+### Install dependencies:
+```bash
+npm install
+```
+## Run the application:
+```bash
+npm start
+```
+### The application will start on http://localhost:3000.
 
-### `npm start`
+### Usage
+Adding a Habit
+Enter a title for the new habit in the input field.
+Click the "Add Habit" button to add the new habit to the list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+Managing Habits
+Each habit tracker has the following controls:
+Done: Mark existing  day as completed.
+Color: Change the color theme of the habit tracker.
+Delete: Remove the habit from the list.
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Visualizing Progress
+The calendar heatmap for each habit shows your progress over the  year.
+Each cell represents a day, and the color intensity indicates the completion level of the habit for that day.
+Hover over the cells to see additional information using tooltips.
 
-### `npm test`
+### Folder Structure
+```arduino
+streakhive/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── HabitList.js
+│   │   └── HabitCard.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── ...
+```
+### Dependencies
+StreakHive uses the following main dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React: A JavaScript library for building user interfaces.
+Tailwind CSS: A utility-first CSS framework for rapid UI development.
+DaisyUI: A plugin for Tailwind CSS that provides pre-designed components.
+React Tooltip: A library for adding tooltips to your React application.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributing
+Contributions are welcome! If you have any ideas, suggestions, or issues, please open a pull request or an issue on the GitHub repository.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Happy tracking with StreakHive! 🚀
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
