@@ -12,7 +12,7 @@ Installation
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/yourusername/streakhive.git
+git clone https://github.com/SHIV000000/streakhive.git
 ```
 ```bash
 cd streakhive
@@ -21,20 +21,16 @@ cd streakhive
 ```bash
 npm install
 ```
-## Run the application:
+### Run the application:
 ```bash
 npm start
 ```
 ### The application will start on http://localhost:3000.
 
-### Usage
-Adding a Habit
-Enter a title for the new habit in the input field.
-Click the "Add Habit" button to add the new habit to the list.
-
+## Usage
 ```
-Managing Habits
-Each habit tracker has the following controls:
+Adding a Habit: Enter a title for the new habit in the input field.
+Click the "Add Habit" button to add the new habit to the list.
 Done: Mark existing  day as completed.
 Color: Change the color theme of the habit tracker.
 Delete: Remove the habit from the list.
@@ -43,7 +39,7 @@ Delete: Remove the habit from the list.
 ### Visualizing Progress
 The calendar heatmap for each habit shows your progress over the  year.
 Each cell represents a day, and the color intensity indicates the completion level of the habit for that day.
-Hover over the cells to see additional information using tooltips.
+
 
 ### Folder Structure
 ```arduino
