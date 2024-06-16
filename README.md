@@ -8,7 +8,7 @@ Add and Manage Habits: Easily add new habits and manage existing ones with intui
 Tooltip Information: Hover over calendar cells to see additional information about your habit progress.
 
 
-![streakhive theme light]([Screenshot 2024-06-16 234952.png)](https://github.com/SHIV000000/streakhive/blob/main/Screenshot%202024-06-16%20234952.png)
+![streakhive theme light](https://github.com/SHIV000000/streakhive/blob/main/Screenshot%202024-06-16%20234952.png)
 
 ## Installation
 
