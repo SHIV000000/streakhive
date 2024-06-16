@@ -9,6 +9,7 @@ Tooltip Information: Hover over calendar cells to see additional information abo
 
 
 ![streakhive theme light](https://github.com/SHIV000000/streakhive/blob/main/Screenshot%202024-06-16%20234952.png)
+![streakhive theme dark](https://github.com/SHIV000000/streakhive/blob/main/Screenshot%202024-06-16%20234952.png)
 
 ## Installation
 
