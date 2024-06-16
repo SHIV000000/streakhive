@@ -6,7 +6,11 @@ Compact Calendar Heatmaps: Visualize your habit progress with small, rectangular
 Color-coded Habits: Each habit is color-coded with different color intensities to indicate progress.
 Add and Manage Habits: Easily add new habits and manage existing ones with intuitive controls.
 Tooltip Information: Hover over calendar cells to see additional information about your habit progress.
-Installation
+
+
+![streakhive theme dark](Screenshot 2024-06-16 234952.png)
+
+## Installation
 
 ## To get started with StreakHive, follow these steps:
 
